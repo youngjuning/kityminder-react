@@ -3,9 +3,11 @@ title: Docs
 sidemenu: false
 ---
 
-# kityminder-react
-
-基于 [kityminder-core](https://github.com/fex-team/kityminder-core) 和 [kity](https://github.com/fex-team/kity) 封装的用于渲染百度脑图 kv JSON 数据的 React 组件。
+<div align="center">
+  <h1>kityminder-react</h1>
+  <img alt="" src="https://cdn.jsdelivr.net/gh/youngjuning/images/202111142059632.png" width="150"/>
+  <p> 基于 <a href="https://github.com/fex-team/kityminder-core">kityminder-core</a> 和 <a href="https://github.com/fex-team/kity">kity</a> 封装的用于渲染百度脑图 kv JSON 数据的 React 组件。</p>
+</div>
 
 ## 安装
 
