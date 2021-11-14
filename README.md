@@ -1,4 +1,4 @@
-# react-kityminder-view
+# kityminder-react
 
 ## Getting Started
 

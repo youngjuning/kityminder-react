@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "react-kityminder-view",
+  "name": "kityminder-react",
   "version": "1.0.0",
   "scripts": {
     "start": "dumi dev",

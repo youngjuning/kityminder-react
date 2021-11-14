@@ -1,11 +1,10 @@
-
 ## Foo
 
 Demo:
 
 ```tsx
 import React from 'react';
-import { Foo } from 'react-kityminder-view';
+import { Foo } from 'kityminder-react';
 
 export default () => <Foo title="First Demo" />;
 ```

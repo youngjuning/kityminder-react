@@ -1,2 +1,1 @@
-
-## Hello react-kityminder-view!
+## Hello kityminder-react!
