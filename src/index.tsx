@@ -9,9 +9,14 @@ export interface IKityMinderProps {
    * @default null
    */
   data: object;
+  /**
+   * @description 点击图标跳转的链接
+   * @default null
+   */
+  link: string;
 }
 
-export default ({ data }: IKityMinderProps) => {
+export default ({ data, link }: IKityMinderProps) => {
   const kityRef = useRef(null);
 
   useEffect(() => {
@@ -29,11 +34,23 @@ export default ({ data }: IKityMinderProps) => {
   }, [data]);
 
   return (
-    <div
-      ref={kityRef}
-      // @ts-ignore
-      type="application/kityminder"
-      minder-data-type="json"
-    ></div>
+    <div style={{ position: 'relative' }}>
+      <div
+        ref={kityRef}
+        // @ts-ignore
+        type="application/kityminder"
+        minder-data-type="json"
+      ></div>
+      <a
+        style={{ position: 'absolute', top: '20px', right: '20px' }}
+        target="_blank"
+        href={link}
+      >
+        <img
+          src="https://cdn.jsdelivr.net/gh/youngjuning/images/202111150145860.png"
+          width="30px"
+        />
+      </a>
+    </div>
   );
 };
