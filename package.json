@@ -1,5 +1,4 @@
 {
-  "private": true,
   "name": "kityminder-react",
   "version": "1.0.0",
   "scripts": {
@@ -8,10 +7,14 @@
     "docs:deploy": "gh-pages -d docs-dist",
     "build": "father-build",
     "deploy": "npm run docs:build && npm run docs:deploy",
-    "release": "npm run build && npm publish",
+    "release": "standard-version",
+    "prepublishOnly": "npm run build",
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
     "test": "umi-test",
     "test:coverage": "umi-test --coverage"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   },
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -28,6 +31,8 @@
     ]
   },
   "dependencies": {
+    "kity": "^2.0.4",
+    "kityminder-core": "^1.4.50",
     "react": "^16.12.0 || ^17.0.0"
   },
   "devDependencies": {
@@ -37,6 +42,7 @@
     "gh-pages": "^3.0.0",
     "lint-staged": "^10.0.7",
     "prettier": "^2.2.1",
+    "standard-version": "^9.3.2",
     "yorkie": "^2.0.0"
   }
 }
