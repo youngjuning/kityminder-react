@@ -26,10 +26,6 @@ npm install kityminder-react
 ## 示例
 
 ```tsx
-/**
- * defaultShowCode: true
- * hideActions: ["EXTERNAL"]
- */
 import React from 'react';
 import './index.css';
 import KityMinder from 'kityminder-react';

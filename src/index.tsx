@@ -21,7 +21,7 @@ export default ({ data }: IKityMinderProps) => {
       kityRef.current.append(JSON.stringify(data));
       // 创建 km 实例
       // @ts-ignore
-      var km = new kityminder.Minder();
+      var km = (window.km = new kityminder.Minder());
       km.setup(kityRef.current);
       km.disable();
       km.execCommand('hand');
@@ -29,10 +29,11 @@ export default ({ data }: IKityMinderProps) => {
   }, [data]);
 
   return (
-    <script
+    <div
       ref={kityRef}
+      // @ts-ignore
       type="application/kityminder"
       minder-data-type="json"
-    ></script>
+    ></div>
   );
 };
